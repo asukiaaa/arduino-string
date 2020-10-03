@@ -8,7 +8,15 @@ namespace string_asukiaaa {
     return str;
   }
 
+  String padNumStart(int num, unsigned int len, char pad) {
+    return padStart(String(num), len, pad);
+  }
+
   String padNumStart(long num, unsigned int len, char pad) {
+    return padStart(String(num), len, pad);
+  }
+
+  String padNumStart(float num, unsigned int len, char pad) {
     return padStart(String(num), len, pad);
   }
 
@@ -23,7 +31,15 @@ namespace string_asukiaaa {
     return str;
   }
 
+  String padNumEnd(int num, unsigned int len, char pad) {
+    return padEnd(String(num), len, pad);
+  }
+
   String padNumEnd(long num, unsigned int len, char pad) {
+    return padEnd(String(num), len, pad);
+  }
+
+  String padNumEnd(float num, unsigned int len, char pad) {
     return padEnd(String(num), len, pad);
   }
 
