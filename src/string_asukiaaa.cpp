@@ -1,11 +1,17 @@
 #include "string_asukiaaa.h"
 
 namespace string_asukiaaa {
-  String padStart(String str, unsigned int len, char pad) {
-    while (str.length() < len) {
-      str = pad + str;
+  String padStart(const String& s, unsigned int totalLength, char pad) {
+    if (totalLength <= s.length()) return s;
+    unsigned int paddingLength = totalLength - s.length();
+
+    String result;
+    result.reserve(totalLength);
+    while (paddingLength--) {
+      result += pad;
     }
-    return str;
+    result += s;
+    return result;
   }
 
   String padNumStart(int num, unsigned int len, char pad) {
@@ -24,11 +30,17 @@ namespace string_asukiaaa {
     return padStart(String(num), len, pad);
   }
 
-  String padEnd(String str, int unsigned len, char pad) {
-    while (str.length() < len) {
-      str += pad;
+  String padEnd(const String& s, unsigned int totalLength, char pad) {
+    if (totalLength <= s.length()) return s;
+    unsigned int paddingLength = totalLength - s.length();
+
+    String result;
+    result.reserve(totalLength);
+    result = s;
+    while (paddingLength--) {
+      result += pad;
     }
-    return str;
+    return result;
   }
 
   String padNumEnd(int num, unsigned int len, char pad) {
