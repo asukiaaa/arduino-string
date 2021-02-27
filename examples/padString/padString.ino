@@ -6,7 +6,7 @@ void setup() {
 
 void loop() {
   unsigned long nowMs = millis();
-  Serial.println(nowMs);
   Serial.println(string_asukiaaa::padStart(String(nowMs), 10, ' ') + "ms");
   Serial.println(string_asukiaaa::padEnd(String(nowMs), 10, ' ') + "ms");
+  delay(500);
 }
