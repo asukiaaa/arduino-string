@@ -30,3 +30,7 @@ String strB = string_asukiaaa::padNumEnd(99, 10, '-'));
 ## License
 
 MIT
+
+## Reference
+
+- [Add padStart and padEnd | ArduinoCore-avr](https://github.com/arduino/ArduinoCore-avr/pull/392)
