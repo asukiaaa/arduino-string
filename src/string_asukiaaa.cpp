@@ -58,4 +58,7 @@ namespace string_asukiaaa {
   String padNumEnd(double num, unsigned int len, char pad) {
     return padEnd(String(num), len, pad);
   }
+
+  String yesNo(bool value) { return value ? "yes" : "no"; }
+  String trueFalse(bool value) { return value ? "true" : "false"; }
 }

@@ -2,7 +2,7 @@
 
 This library supplies useful functions to manage string on Arduino.
 
-## Usaste
+## Usage
 
 See [an example project for string](./examples/padString/padString.ino).
 
@@ -25,6 +25,12 @@ padNumStart and padNumEnd
 String strA = string_asukiaaa::padNumStart(123, 10, '0'));
 // strB becomes "99--------"
 String strB = string_asukiaaa::padNumEnd(99, 10, '-'));
+```
+
+yesNo and trueFalse
+```c
+string_asukiaaa::yesNo(true); // returns "yes"
+string_asukiaaa::trueFalse(false): // returns "false"
 ```
 
 ## License

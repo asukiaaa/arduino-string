@@ -14,6 +14,8 @@ namespace string_asukiaaa {
   String padNumEnd(long num, unsigned int len, char pad);
   String padNumEnd(float num, unsigned int len, char pad);
   String padNumEnd(double num, unsigned int len, char pad);
+  String yesNo(bool value);
+  String trueFalse(bool value);
 }
 
 #endif
