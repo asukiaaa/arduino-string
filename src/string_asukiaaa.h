@@ -3,6 +3,10 @@
 
 #include <Arduino.h>
 
+#define STRING_ASUKIAAA_VERSION_MAJOR 1
+#define STRING_ASUKIAAA_VERSION_MINOR 0
+#define STRING_ASUKIAAA_VERSION_PATCH 3
+
 namespace string_asukiaaa {
   String padStart(const String& str, unsigned int len, char pad);
   String padNumStart(int num, unsigned int len, char pad);
