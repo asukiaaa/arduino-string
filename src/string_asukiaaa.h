@@ -20,6 +20,8 @@ String padNumEnd(float num, unsigned int len, char pad);
 String padNumEnd(double num, unsigned int len, char pad);
 String yesNo(bool value);
 String trueFalse(bool value);
+void printHexBytesToStream(Stream* serial, uint8_t* bytes, size_t lenBytes);
+void printlnHexBytesToStream(Stream* serial, uint8_t* bytes, size_t lenBytes);
 }  // namespace string_asukiaaa
 
 #endif

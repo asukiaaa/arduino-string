@@ -61,4 +61,18 @@ String padNumEnd(double num, unsigned int len, char pad) {
 
 String yesNo(bool value) { return value ? "yes" : "no"; }
 String trueFalse(bool value) { return value ? "true" : "false"; }
+
+void printHexBytesToStream(Stream* serial, uint8_t* bytes, size_t lenBytes) {
+  for (size_t i = 0; i < lenBytes; ++i) {
+    if (i != 0) {
+      serial->print(" ");
+    }
+    serial->print(padStart(String(bytes[i], HEX), 2, '0'));
+  }
+}
+
+void printlnHexBytesToStream(Stream* serial, uint8_t* bytes, size_t lenBytes) {
+  printHexBytesToStream(serial, bytes, lenBytes);
+  serial->println();
+}
 }  // namespace string_asukiaaa
