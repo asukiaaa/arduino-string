@@ -6,12 +6,12 @@ This library supplies useful functions to manage string on Arduino.
 
 See [an example project for string](./examples/padString/padString.ino).
 
-Include
+**Include**
 ```c
 #include <string_asukiaaa.h>
 ```
 
-padStart and padEnd
+`padStart` and `padEnd`
 ```c
 // strA becomes "0000000123"
 String strA = string_asukiaaa::padStart("123", 10, '0'));
@@ -19,7 +19,7 @@ String strA = string_asukiaaa::padStart("123", 10, '0'));
 String strB = string_asukiaaa::padEnd("bb", 10, '-'));
 ```
 
-padNumStart and padNumEnd
+`padNumStart` and `padNumEnd`
 ```c
 // strA becomes "0000000123"
 String strA = string_asukiaaa::padNumStart(123, 10, '0'));
@@ -27,7 +27,7 @@ String strA = string_asukiaaa::padNumStart(123, 10, '0'));
 String strB = string_asukiaaa::padNumEnd(99, 10, '-'));
 ```
 
-yesNo and trueFalse
+`yesNo` and `trueFalse`
 ```c
 string_asukiaaa::yesNo(true); // returns "yes"
 string_asukiaaa::trueFalse(false): // returns "false"
