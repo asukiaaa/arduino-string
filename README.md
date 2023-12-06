@@ -6,7 +6,7 @@ This library supplies useful functions to manage string on Arduino.
 
 See [an example project for string](./examples/padString/padString.ino).
 
-**Include**
+Include
 ```c
 #include <string_asukiaaa.h>
 ```
