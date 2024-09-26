@@ -75,4 +75,20 @@ void printlnHexBytesToStream(Stream* serial, uint8_t* bytes, size_t lenBytes) {
   printHexBytesToStream(serial, bytes, lenBytes);
   serial->println();
 }
+
+String getBySplit(const String str, String wordSplit, uint16_t index) {
+  uint16_t indexPrevStart = 0;
+  for (uint16_t i = 0; i < index + 1; ++i) {
+    auto wordSplitIndex = str.indexOf(wordSplit, indexPrevStart);
+    if (i == index) {
+      return str.substring(indexPrevStart,
+                           wordSplitIndex < 0 ? str.length() : wordSplitIndex);
+    }
+    if (wordSplitIndex < 0) {
+      return "";
+    }
+    indexPrevStart = wordSplitIndex + wordSplit.length();
+  }
+  return "";
+}
 }  // namespace string_asukiaaa

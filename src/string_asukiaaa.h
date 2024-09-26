@@ -22,6 +22,7 @@ String yesNo(bool value);
 String trueFalse(bool value);
 void printHexBytesToStream(Stream* serial, uint8_t* bytes, size_t lenBytes);
 void printlnHexBytesToStream(Stream* serial, uint8_t* bytes, size_t lenBytes);
+String getBySplit(const String str, String wordSplit, uint16_t index);
 }  // namespace string_asukiaaa
 
 #endif
