@@ -33,6 +33,15 @@ string_asukiaaa::yesNo(true); // returns "yes"
 string_asukiaaa::trueFalse(false): // returns "false"
 ```
 
+`getBySplit`
+```c
+String strToSplit = "asukiaaa.blogspot.com";
+String strFirst = string_asukiaaa::getBySplit(strToSplit, ".", 0);   // "asukiaaa"
+String strSecond = string_asukiaaa::getBySplit(strToSplit, ".", 1);  // "blogspot"
+String strThird = string_asukiaaa::getBySplit(strToSplit, ".", 2);   // "com"
+String strForth = string_asukiaaa::getBySplit(strToSplit, ".", 3);   // ""
+```
+
 ## License
 
 MIT
