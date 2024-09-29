@@ -5,7 +5,7 @@
 
 #define STRING_ASUKIAAA_VERSION_MAJOR 1
 #define STRING_ASUKIAAA_VERSION_MINOR 0
-#define STRING_ASUKIAAA_VERSION_PATCH 5
+#define STRING_ASUKIAAA_VERSION_PATCH 6
 
 namespace string_asukiaaa {
 String padStart(const String& str, unsigned int len, char pad);
