@@ -22,6 +22,14 @@ String padNumStart(long num, unsigned int len, char pad) {
   return padStart(String(num), len, pad);
 }
 
+String padNumStart(unsigned int num, unsigned int len, char pad) {
+  return padStart(String(num), len, pad);
+}
+
+String padNumStart(unsigned long num, unsigned int len, char pad) {
+  return padStart(String(num), len, pad);
+}
+
 String padNumStart(float num, unsigned int len, char pad) {
   return padStart(String(num), len, pad);
 }
@@ -48,6 +56,14 @@ String padNumEnd(int num, unsigned int len, char pad) {
 }
 
 String padNumEnd(long num, unsigned int len, char pad) {
+  return padEnd(String(num), len, pad);
+}
+
+String padNumEnd(unsigned int num, unsigned int len, char pad) {
+  return padEnd(String(num), len, pad);
+}
+
+String padNumEnd(unsigned long num, unsigned int len, char pad) {
   return padEnd(String(num), len, pad);
 }
 
